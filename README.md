@@ -7,7 +7,7 @@ You'll need a recent go and node version.
 ## Install & Build
 
 ```bash
-git clone github.com/munxar/goapi
+git clone https://github.com/munxar/goapi
 cd goapi
 
 go generate ./...
