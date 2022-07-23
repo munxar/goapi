@@ -19,7 +19,9 @@ func cors(handler http.Handler) http.Handler {
 
 func main() {
 	devMode := false
+	port := uint(3001)
 	flag.BoolVar(&devMode, "dev", devMode, "enable dev mode")
+	flag.UintVar(&port, "p", port, "server port")
 	flag.Parse()
 
 	mux := http.NewServeMux()
@@ -37,5 +39,6 @@ func main() {
 		fmt.Println("server running in dev mode")
 	}
 
-	log.Fatal(http.ListenAndServe(":3001", handler))
+	fmt.Printf("api served at http://localhost:%d\ngui served at http://localhost:%d/admin\n", port, port)
+	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", port), handler))
 }
