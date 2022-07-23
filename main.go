@@ -3,9 +3,11 @@ package main
 import (
 	"flag"
 	"fmt"
-	"goapi/frontend"
+
 	"log"
 	"net/http"
+
+	"github.com/munxar/goapi/frontend"
 )
 
 func cors(handler http.Handler) http.Handler {
