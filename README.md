@@ -1,5 +1,8 @@
 # SvelteKit embeded in Go
 
+For more details check out the blog post at:
+https://www.liip.ch/en/blog/embed-sveltekit-into-a-go-binary
+
 ## Requirements
 
 You'll need a recent go and node version.
