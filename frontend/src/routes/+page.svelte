@@ -1,4 +1,4 @@
-<!-- src/routes/index.svelte -->
+<!-- src/routes/+page.svelte -->
 <script lang="ts">
 	const apiUrl = (path: string) => `${import.meta.env.VITE_API_URL || ''}${path}`;
 
