@@ -1,4 +1,3 @@
-// frontend/svelte.config.js
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
@@ -13,10 +12,7 @@ const config = {
 			base: '/admin'
 		},
 		trailingSlash: 'ignore',
-		adapter: adapter(),
-		prerender: {
-			default: true
-		}
+		adapter: adapter()
 	}
 };
 
