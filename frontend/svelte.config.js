@@ -11,8 +11,9 @@ const config = {
 		paths: {
 			base: '/admin'
 		},
-		trailingSlash: 'ignore',
-		adapter: adapter()
+		trailingSlash: 'always',
+
+		adapter: adapter({})
 	}
 };
 
